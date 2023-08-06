@@ -26,16 +26,14 @@ function SongkDetails() {
 
   return (
     <article>
-      <h3>
-        {song.is_favorite ? <span>⭐️</span> : null} {song.name}
-      </h3>
-      <h5>
-        <span>
-          {song.artist}
-        </span>
-      </h5>
-      <h5>{song.album}</h5>
-      <p>Length: {song.time}</p>
+      <div className="songDetail">
+        <h2>
+          {song.is_favorite ? <span>⭐️</span> : null}
+          {song.name} - by {song.artist}
+        </h2>
+        <h4>{song.album}</h4>
+        <p>Length: {song.time}</p>
+      </div>
       <div className="showNavigation">
         <div>
           {" "}

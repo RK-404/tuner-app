@@ -10,12 +10,12 @@ function Songs() {
   useEffect(() => {
     axios
       .get(`${API}/songs`)
-      .then((response) => setSongs(response.data))
+      .then(response => setSongs(response.data))
       .catch((c) => console.warn("catch", c));
   }, []);
   
   return (
-    <div className="Bookmarks">
+    <div className="Songs">
       <section>
         <table>
           <thead>
@@ -23,12 +23,13 @@ function Songs() {
               <th>Favorite</th>
               <th>Title</th>
               <th>Artist</th>
+              <th>Time</th>
             </tr>
           </thead>
           <tbody>
-            {songs.map((song) => {
-              return <Song key={song.id} song={song} />;
-            })}
+            {songs.map(song =>
+              <Song key={song.id} song={song} />
+            )}
           </tbody>
         </table>
       </section>

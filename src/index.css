@@ -1,15 +1,20 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
 }
 
 nav {
-  background-color: #ff78fb;
+  background-color: #c9184a;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1em;
   box-shadow: 2px 2px 4px grey;
   margin-bottom: 1em;
+}
+
+nav h1 a:hover {
+  color: #fff0f3;
 }
 
 main {
@@ -19,12 +24,19 @@ main {
 
 a {
   text-decoration: none;
-  color: #8957ab;
+  color: #ffb3c1;
 }
 
-button a {
-  color: antiquewhite;
+button, input[type="submit"] {
+  background-color: transparent;
+  color: #800f2f;
+  font-weight: bold;
+  padding: 0.5em 1em 0.5em 1em;
 }
+
+/* button a {
+  color: #ffd8a4;
+} */
 
 h4 {
   display: flex;
@@ -33,11 +45,14 @@ h4 {
 }
 
 table {
-  width: 50%;
+  border-collapse: collapse;
+  color: #ffccd5;
   margin: auto;
+  width: 60%;
 }
 
 td {
+  padding: 1em;
   text-align: center;
 }
 
@@ -46,8 +61,16 @@ tbody td:not(td:first-of-type):hover {
   opacity: 0.9;
 }
 
+thead {
+  background-color: #590d22;
+}
+
+tbody tr:nth-child(odd) {
+  background: #c9184a;
+}
+
 tbody tr:nth-child(even) {
-  background: #f4eafd;
+  background: #a4133c;
 }
 
 /* .New {
@@ -77,8 +100,22 @@ input[type="submit"] {
   width: 30%;
 }
 
+article {
+  margin: auto;
+  width: 70%;
+}
+
+.songDetail {
+  background-color: #a4133c;
+  box-shadow: 2px 2px 4px #808080;
+  color: #ffccd5;
+  margin: auto;
+  padding: 2em 5em 2em 5em;
+}
+
 .showNavigation {
   display: flex;
   justify-content: space-around;
+  margin-top: 2em;
   width: 50%;
 }

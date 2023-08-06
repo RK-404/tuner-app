@@ -14,6 +14,7 @@ function Song({ song }) {
         <Link to={`/songs/${song.id}`}>{song.name}</Link>
       </td>
       <td>{song.artist}</td>
+      <td>{song.time}</td>
     </tr>
   );
 }
