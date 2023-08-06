@@ -1,8 +1,8 @@
 function Home() {
   return (
     <div>
-      <h2>Welcome</h2>
-      <h3>To Tuner App!</h3>
+      <h2>Welcome To</h2>
+      <h1>Tuner App!</h1>
     </div>
   );
 }

@@ -3,7 +3,7 @@ import SongkDetails from "../Components/SongDetails";
 function Show() {
   return (
     <div className="Show">
-      <h2>Show</h2>
+      <h1>Show</h1>
       <SongkDetails />
     </div>
   );

@@ -28,7 +28,7 @@ function SongkDetails() {
     <article>
       <div className="songDetail">
         <h2>
-          {song.is_favorite ? <span>⭐️</span> : null}
+          {song.is_favorite ? <span>⭐️ </span> : null}
           {song.name} - by {song.artist}
         </h2>
         <h4>{song.album}</h4>

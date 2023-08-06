@@ -3,7 +3,7 @@ import SongEditForm from "../Components/SongEditForm";
 function Edit() {
   return (
     <div className="New Edit">
-      <h2>Edit</h2>
+      <h1>Edit</h1>
       <SongEditForm />
     </div>
   );
